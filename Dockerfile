@@ -37,4 +37,4 @@ RUN { \
 COPY entry.sh /entry.sh
 VOLUME /etc/cjdns
 ENTRYPOINT ["/bin/bash", "/entry.sh"]
-CMD ["cjdroute"]
+CMD ["cjdroute", "--nobg"]
