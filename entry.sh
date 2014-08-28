@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if ! [ -e /etc/cjdns/cjdroute.conf ]; then
+if ! [ -s /etc/cjdns/cjdroute.conf ]; then
   echo -n "Generate /etc/cjdns/cjdroute.conf... "
   (
     umask 077
